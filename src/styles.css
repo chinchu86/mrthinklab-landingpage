@@ -1,1 +1,374 @@
+:root {
+  --bg: #050707;
+  --panel: #0d1111;
+  --panel2: #111717;
+  --text: #f5f7f7;
+  --muted: #a8b3b8;
+  --cyan: #38dce6;
+  --cyan2: #1fbfc9;
+  --border: rgba(56, 220, 230, 0.18);
+}
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at top right, rgba(56, 220, 230, 0.12), transparent 32rem),
+    radial-gradient(circle at top left, rgba(56, 220, 230, 0.07), transparent 24rem),
+    var(--bg);
+  color: var(--text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 28px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 800;
+}
+
+.mark {
+  color: var(--cyan);
+  letter-spacing: -8px;
+  transform: rotate(90deg);
+  font-size: 22px;
+}
+
+.navCta {
+  border: 1px solid var(--border);
+  padding: 10px 16px;
+  border-radius: 999px;
+  color: var(--cyan);
+}
+
+.hero {
+  width: min(1180px, calc(100% - 40px));
+  margin: 60px auto 90px;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.eyebrow {
+  color: var(--cyan);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.78rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+h1 {
+  font-size: clamp(3rem, 7vw, 6.5rem);
+  line-height: 0.94;
+  letter-spacing: -0.07em;
+  margin: 0;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 1;
+  letter-spacing: -0.055em;
+  margin: 0 0 18px;
+}
+
+h3 {
+  margin: 0 0 10px;
+}
+
+p {
+  color: var(--muted);
+  font-size: 1.06rem;
+  line-height: 1.7;
+}
+
+.heroText p {
+  max-width: 640px;
+  font-size: 1.22rem;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 34px;
+}
+
+.primary,
+.secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 22px;
+  border-radius: 14px;
+  font-weight: 800;
+}
+
+.primary {
+  background: var(--cyan);
+  color: #001012;
+  box-shadow: 0 0 30px rgba(56, 220, 230, 0.2);
+}
+
+.secondary {
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.mockup {
+  background: linear-gradient(180deg, rgba(19, 29, 29, 0.98), rgba(6, 9, 9, 0.98));
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 24px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+}
+
+.mockHeader {
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+  margin-bottom: 28px;
+}
+
+.badge {
+  color: var(--cyan);
+  border: 1px solid var(--border);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.phase {
+  color: var(--cyan);
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-weight: 900;
+  font-size: 0.75rem;
+  margin-bottom: 16px;
+}
+
+.chat {
+  padding: 18px;
+  border-radius: 18px;
+  margin: 14px 0;
+  line-height: 1.6;
+}
+
+.coach {
+  background: rgba(56, 220, 230, 0.08);
+  border-left: 3px solid var(--cyan);
+}
+
+.student {
+  background: rgba(255, 255, 255, 0.07);
+  margin-left: 60px;
+}
+
+.reportCard {
+  margin-top: 24px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  gap: 12px;
+  color: var(--cyan);
+}
+
+.section {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 90px 0;
+}
+
+.problem {
+  text-align: center;
+  max-width: 900px;
+}
+
+.sectionHead {
+  max-width: 760px;
+  margin-bottom: 34px;
+}
+
+.icon {
+  color: var(--cyan);
+  margin-bottom: 16px;
+}
+
+.grid {
+  display: grid;
+  gap: 18px;
+}
+
+.four {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card,
+.step {
+  background: rgba(13, 17, 17, 0.8);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 26px;
+}
+
+.cardIcon {
+  color: var(--cyan);
+  margin-bottom: 16px;
+}
+
+.cardIcon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.step span {
+  display: inline-block;
+  color: var(--cyan);
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.comparison > div {
+  border: 1px solid var(--border);
+  border-radius: 26px;
+  padding: 30px;
+  background: rgba(13, 17, 17, 0.8);
+}
+
+.ladderCol {
+  box-shadow: inset 0 0 0 1px rgba(56, 220, 230, 0.25);
+}
+
+.ladderCol h3 {
+  color: var(--cyan);
+}
+
+.pricing {
+  width: min(900px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 90px 0;
+}
+
+.pricingCard {
+  background: linear-gradient(180deg, rgba(56, 220, 230, 0.11), rgba(10, 14, 14, 0.95));
+  border: 1px solid var(--border);
+  border-radius: 32px;
+  padding: clamp(28px, 6vw, 58px);
+  text-align: center;
+}
+
+.price {
+  color: var(--text);
+  font-size: clamp(2.4rem, 6vw, 5rem);
+  line-height: 1;
+  font-weight: 900;
+  margin: 24px 0 6px;
+  letter-spacing: -0.06em;
+}
+
+.then {
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 30px auto;
+  max-width: 420px;
+  text-align: left;
+}
+
+li {
+  padding: 10px 0;
+  color: var(--muted);
+}
+
+li::before {
+  content: "✓";
+  color: var(--cyan);
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.full {
+  justify-content: center;
+  width: 100%;
+}
+
+.final {
+  width: min(900px, calc(100% - 40px));
+  margin: 0 auto;
+  text-align: center;
+  padding: 90px 0 120px;
+}
+
+footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 28px 0 40px;
+  color: var(--muted);
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+footer div {
+  display: flex;
+  gap: 18px;
+}
+
+@media (max-width: 900px) {
+  .hero,
+  .comparison {
+    grid-template-columns: 1fr;
+  }
+
+  .four,
+  .three,
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+}
