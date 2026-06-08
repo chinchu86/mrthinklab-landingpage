@@ -134,10 +134,14 @@ function App() {
         <div className="pricingCard">
           <div className="eyebrow">Launch Offer</div>
           <h2>Ladder Premium</h2>
-          <p className="price">$10 first month</p>
-          <p className="then">Then $20/month. Cancel anytime.</p>
+          <p className="price">$7.50 first month</p>
+          <p className="then">Then $15/month. Cancel anytime.</p>
+          <p className="value">
+            A single private tutoring session can cost $30–$40 or more.
+            Ladder provides personalized thinking coaching for just $15/month, with up to 3 guided sessions per day.
+          </p>
           <ul>
-            <li>AI Thinking Coach sessions</li>
+            <li>Up to 3 personalized coaching sessions per day</li>
             <li>English & Spanish support</li>
             <li>Audio playback</li>
             <li>Parent/tutor reports</li>
