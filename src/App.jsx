@@ -163,9 +163,9 @@ function App() {
       <footer>
         <span>MR | ThinkLab</span>
         <div>
-          <a href="#">Privacy</a>
-          <a href="#">Terms</a>
-          <a href="mailto:hello@mrthinklab.com">Contact</a>
+          <a href="https://ladder.mrthinklab.com/privacy" target="_blank" rel="noopener noreferrer">Privacy</a>
+          <a href="https://ladder.mrthinklab.com/terms" target="_blank" rel="noopener noreferrer">Terms</a>
+          <a href="mailto:miguel@mrthinklab.com">Contact</a>
         </div>
       </footer>
     </main>
